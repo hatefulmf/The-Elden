@@ -7,7 +7,7 @@ const { v4: uuidv4 } = require('uuid');
 const JWT_SECRET = "Syah021015*@"; // Secure key
 
 const app = express();
-const port = 3001;
+const port = process.env.port || 8080;
 
 // MongoDB URI
 const uri = "mongodb+srv://syahhasrizal:syah5599@thegame.ymr5c.mongodb.net/?retryWrites=true&w=majority&appName=TheGame";
